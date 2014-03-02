@@ -1,4 +1,3 @@
-
 Start Mongo:
 from ~/dev/mongo* run: bin/mongod —dbpath data/db
 
