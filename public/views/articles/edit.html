@@ -1,0 +1,44 @@
+<section data-ng-controller="ArticlesController" data-ng-init="findOne()">
+    <form class="form-horizontal col-md-6" role="form" data-ng-submit="update()">
+        <div class="form-group">
+            <label for="firstName" class="col-md-2 control-label">First</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" data-ng-model="article.firstName" id="firstName" placeholder="First Name" required>
+            </div>
+        </div>
+
+
+        <div class ="form-group">
+            <label for="lastName" class="col-md-2 control-label">Last </label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" data-ng-model="article.lastName" id="lastName" placeholder="Last Name" required>
+            </div>
+        </div>
+
+        <div class ="form-group">
+            <label for="streetOne" class="col-md-2 control-label">Street</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" data-ng-model="article.streetOne" id="streetOne" placeholder="Street Address" required>
+            </div>
+        </div>
+
+        <div class ="form-group">
+            <label for="streetTwo" class="col-md-2 control-label">Unit</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" data-ng-model="article.streetTwo" id="streetTwo" placeholder="Apt / Unit #" required>
+            </div>
+        </div>
+        <div class ="form-group">
+            <label for="zip" class="col-md-2 control-label">Zip Code</label>
+            <div class="col-md-10">
+                <input type="number" class="form-control" data-ng-model="article.zip" id="zip" placeholder="Zip Code" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+        </div>
+    </form>
+</section>
